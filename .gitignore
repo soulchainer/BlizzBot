@@ -2,5 +2,3 @@ node_modules
 config.json
 guild.js
 ow.js
-package.json
-package-lock.json
