@@ -8,8 +8,8 @@ exports.run = (client, message, args) => {
       return;
     };
 
-    let [name, server, region] = args;
-    let classes = {
+    const [name, server, region] = args;
+    const classes = {
         1: 'Warrior',
         2: 'Paladin',
         3: 'Hunter',
@@ -23,7 +23,7 @@ exports.run = (client, message, args) => {
         11: 'Druid',
         12: 'Demon Hunter',
     };
-    let races = {
+    const races = {
         1: 'Human',
         2: 'Orc',
         3: 'Dwarf',
@@ -48,7 +48,7 @@ exports.run = (client, message, args) => {
         let guildname;
         let respuesta = response.data;
         // class is a reserved keyword in JavaScript
-        let [clss, race] = [ respuesta.class, respuesta.race ];
+        const [clss, race] = [ respuesta.class, respuesta.race ];
     
         // Para determinar y asignar el nombre de la clase.
         respuesta.class = classes[clss];
